@@ -1,6 +1,7 @@
 import "./App.css";
 import Contacts from "./components/Contacts";
 import CounterList from "./components/CounterList";
+import Form from "./components/Form";
 import Task from "./components/Task";
 
 function App() {
@@ -11,6 +12,9 @@ function App() {
       </Task>
       <Task title="Contacts task">
         <Contacts />
+      </Task>
+      <Task title="Form task">
+        <Form />
       </Task>
     </div>
   );

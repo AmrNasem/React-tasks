@@ -7,9 +7,13 @@ const Counter = () => {
   const handleDec = () => setValue((prev) => prev - 1);
   return (
     <div>
-      <button onClick={handleInc}>+</button>
+      <button className="p-2" onClick={handleInc}>
+        +
+      </button>
       <span>{value}</span>
-      <button onClick={handleDec}>-</button>
+      <button className="p-2" onClick={handleDec}>
+        -
+      </button>
     </div>
   );
 };

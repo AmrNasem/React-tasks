@@ -69,7 +69,9 @@ const Contacts = () => {
         </tbody>
       </table>
       {!filteredContacts.length && (
-        <p className="text-center">Contact not found!</p>
+        <p className="text-center">
+          {query ? "Contact not found!" : "No contacts!"}
+        </p>
       )}
     </div>
   );
