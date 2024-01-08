@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
 .text-center {
   text-align: center;
 }
@@ -31,4 +34,34 @@
 }
 .d-inline-block {
   display: inline-block;
+}
+
+.d-flex {
+  display: flex;
+}
+.px-10 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-turquiose {
+  color: turquoise;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.text-black {
+  color: black;
 }

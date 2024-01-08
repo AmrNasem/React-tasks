@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
-import SingleContact from "./SingleContact";
+import SingleContact from "../components/SingleContact";
+import Task from "../components/Task";
 
 const initialContacts = [
   {
@@ -42,7 +43,7 @@ const Contacts = () => {
   };
 
   return (
-    <div>
+    <Task title="Contacts task">
       <form>
         <input
           className="w-100 outline-none my-2 p-2"
@@ -73,7 +74,7 @@ const Contacts = () => {
           {query ? "Contact not found!" : "No contacts!"}
         </p>
       )}
-    </div>
+    </Task>
   );
 };
 

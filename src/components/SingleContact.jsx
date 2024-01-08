@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import { Link } from "react-router-dom";
 
 const SingleContact = (props) => {
   const deleteHandler = () => {
@@ -6,7 +7,9 @@ const SingleContact = (props) => {
   };
   return (
     <tr>
-      <td>{props.name}</td>
+      <td>
+        <Link to={props.id}>{props.name}</Link>
+      </td>
       <td>{props.phone}</td>
       <td>{props.address}</td>
       <td>
