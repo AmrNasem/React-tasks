@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from "react";
 import SingleContact from "../components/SingleContact";
-import Task from "../components/Task";
+import Task from "../UI/Task";
 
 const initialContacts = [
   {
@@ -46,7 +46,7 @@ const Contacts = () => {
     <Task title="Contacts task">
       <form>
         <input
-          className="w-100 outline-none my-2 p-2"
+          className="w-100 outline-none my-2 p-2 border"
           placeholder="Search contacts"
           onChange={changeHandler}
           type="text"
@@ -54,7 +54,7 @@ const Contacts = () => {
           id="search"
         />
       </form>
-      <table border={1}>
+      <table className="border">
         <thead>
           <tr>
             <th>Name</th>
@@ -71,7 +71,7 @@ const Contacts = () => {
       </table>
       {!filteredContacts.length && (
         <p className="text-center">
-          {query ? "Contact not found!" : "No contacts!"}
+          {query && contacts.length ? "Contact not found!" : "No contacts!"}
         </p>
       )}
     </Task>

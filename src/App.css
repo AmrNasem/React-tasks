@@ -6,62 +6,26 @@
 ul {
   list-style: none;
 }
-.text-center {
-  text-align: center;
-}
-.w-100 {
-  width: 100%;
-}
 .outline-none {
   outline: none;
-}
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.p-2 {
-  padding: 0.5rem;
-}
-.m-0 {
-  margin: 0;
-}
-.d-block {
-  display: block;
-}
-.d-inline-block {
-  display: inline-block;
-}
-
-.d-flex {
-  display: flex;
-}
-.px-10 {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.py-3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.gap-3 {
-  gap: 1rem;
-}
-.text-decoration-none {
-  text-decoration: none;
 }
 .text-turquiose {
   color: turquoise;
 }
-.align-items-center {
-  align-items: center;
+table.border td,
+table.border th {
+  border: 1px solid !important;
 }
-.justify-content-between {
-  justify-content: space-between;
+table.lined tbody tr:nth-child(odd) {
+  background-color: #ddd;
 }
-.text-black {
-  color: black;
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+@media (min-width: 768px) {
+  .special-sticky {
+    position: sticky;
+    min-height: 100vh;
+  }
 }

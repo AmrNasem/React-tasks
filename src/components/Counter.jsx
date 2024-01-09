@@ -6,12 +6,12 @@ const Counter = () => {
   const handleInc = () => setValue((prev) => prev + 1);
   const handleDec = () => setValue((prev) => prev - 1);
   return (
-    <div>
-      <button className="p-2" onClick={handleInc}>
+    <div className="my-2">
+      <button className="p-2 border" onClick={handleInc}>
         +
       </button>
       <span>{value}</span>
-      <button className="p-2" onClick={handleDec}>
+      <button className="p-2 border" onClick={handleDec}>
         -
       </button>
     </div>

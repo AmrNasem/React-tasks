@@ -1,5 +1,5 @@
 import Counter from "../components/Counter";
-import Task from "../components/Task";
+import Task from "../UI/Task";
 
 const counters = ["c1", "c2", "c3", "c4"];
 const CounterList = () => {

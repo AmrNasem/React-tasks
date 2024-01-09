@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Task from "../components/Task";
+import Task from "../UI/Task";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -111,12 +111,12 @@ const Form = () => {
           name="language"
           id=""
         >
-          <option value="">Please check lanuage</option>
+          <option value="">Please check language</option>
           <option value="arabic">Arabic</option>
           <option value="english">English</option>
           <option value="spanish">Spanish</option>
         </select>
-        <button className="d-block p-2 w-100 m-0" type="submit">
+        <button className="d-block p-2 w-100 m-0 border" type="submit">
           Submit
         </button>
       </form>
