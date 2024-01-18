@@ -2,7 +2,14 @@ import React, { memo, useState } from "react";
 import { backend } from "../App";
 import { toast } from "react-toastify";
 
-const SingleUser = ({ id, username, email, country, setIsEditing }) => {
+const SingleUser = ({
+  id,
+  username,
+  email,
+  country,
+  setIsEditing,
+  setUsers,
+}) => {
   const [loading, setLoading] = useState(false);
   const handleDelete = () => {
     setLoading(true);
@@ -11,8 +18,11 @@ const SingleUser = ({ id, username, email, country, setIsEditing }) => {
       body: JSON.stringify({ username, email, country }),
     })
       .then((res) => res.json())
-      .then(() => {
+      .then((data) => {
         setLoading(false);
+        setUsers((prevState) =>
+          prevState.filter((user) => user.id !== data.id)
+        );
         toast.success(`User was deleted successfully!`);
       })
       .catch(() => {

@@ -25,7 +25,10 @@ function App() {
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (user) {
-      if (new Date() - user.loginDate > 1000 * 60 * 60 * 24)
+      if (
+        new Date().getTime() - new Date(user.loginDate).getTime() >
+        1000 * 60 * 60 * 24
+      )
         localStorage.removeItem("user");
       else dispatch(userActions.login(user.data));
     }

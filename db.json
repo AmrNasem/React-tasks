@@ -1,106 +1,22 @@
 {
   "users": [
     {
-      "id": "b241",
-      "username": "Amr Nasem",
-      "email": "a@s.com",
-      "country": "England"
-    },
-    {
-      "id": "b242",
-      "username": "Amr Nasem",
-      "email": "a@s.com",
-      "country": "England"
-    },
-    {
-      "id": "da55",
-      "username": "Eslam",
-      "email": "e@n.com",
-      "country": "England"
-    },
-    {
-      "id": "5883",
-      "username": "rahma",
-      "email": "r@n.com",
+      "id": "1da5",
+      "username": "Amr",
+      "email": "amr@gmail.com",
       "country": "Egypt"
     },
     {
-      "id": "554a",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
+      "username": "Omar",
+      "email": "omar@gmail.com",
+      "country": "Egypt",
+      "id": "d53b"
     },
     {
-      "id": "554b",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "554c",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "554d",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "554e",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "554f",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "5551",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "5552",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "5553",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "5554",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "555a",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "555b",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
-    },
-    {
-      "id": "555c",
-      "username": "amr",
-      "email": "a@s",
-      "country": "Spain"
+      "username": "John Doe",
+      "email": "john@gmail.com",
+      "country": "England",
+      "id": "1305"
     }
   ],
   "admins": [

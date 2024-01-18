@@ -42,7 +42,11 @@ const Dashboard = () => {
           Add user
         </button>
         {(formIsOpen || isEditing) && (
-          <Form editing={isEditing} onClick={handleFormClosure} />
+          <Form
+            editing={isEditing}
+            setUsers={setUsers}
+            onClick={handleFormClosure}
+          />
         )}
       </nav>
       <div style={{ flex: 10 }}>
@@ -58,11 +62,24 @@ const Dashboard = () => {
           </thead>
           <tbody>
             {users.map((user) => (
-              <SingleUser key={user.id} setIsEditing={setIsEditing} {...user} />
+              <SingleUser
+                key={user.id}
+                setUsers={setUsers}
+                setIsEditing={setIsEditing}
+                {...user}
+              />
             ))}
           </tbody>
         </table>
-        {loading && <p className="text-center my-4 fw-semibold">Loading...</p>}
+        {loading ? (
+          <p className="text-center my-4 fw-semibold">Loading...</p>
+        ) : (
+          !users.length && (
+            <p className="text-center text-danger my-4 fw-semibold">
+              No users yet!
+            </p>
+          )
+        )}
       </div>
     </div>
   );

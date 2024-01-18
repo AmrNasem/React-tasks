@@ -3,7 +3,7 @@ import Modal from "../UI/Modal";
 import { backend } from "../App";
 import { toast } from "react-toastify";
 
-const Form = ({ onClick, editing }) => {
+const Form = ({ onClick, editing, setUsers }) => {
   const [username, setUsername] = useState(editing ? editing.username : "");
   const [email, setEmail] = useState(editing ? editing.email : "");
   const [country, setCountry] = useState(editing ? editing.country : "");
@@ -21,8 +21,16 @@ const Form = ({ onClick, editing }) => {
         body: JSON.stringify({ username, email, country }),
       })
         .then((res) => res.json())
-        .then(() => {
+        .then((data) => {
           setLoading(false);
+          setUsers((prevState) => {
+            if (editing)
+              return prevState.map((user) => {
+                if (user.id === data.id) return data;
+                return user;
+              });
+            else return [...prevState, data];
+          });
           toast.success(
             `User was ${editing ? "edited" : "added"} successfully!`
           );
